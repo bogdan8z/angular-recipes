@@ -1,22 +1,25 @@
 <div class="row">
     <div class="col-xs-12">
-        <form>
+        <form [formGroup]="editForm">
             <div class="row">
                 <div class="col-sm-5 form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" class="form-control" [value]="ingredient.name" #newName>
+                    <input id="name" required type="text" formControlName="name" class="form-control" [value]="this.ingredient?.name">
                 </div>
                 <div class="col-sm-2 form-group">
                     <label for="amount">Amount</label>
-                    <input type="number" id="amount" class="form-control" [value]="ingredient.amount" #newAmount>
+                    <input id="amount" required type="number" min="1" formControlName="amount" class="form-control" [value]="this.ingredient?.amount">                 
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs 12">
-                    <button class="btn btn-success" type="button" (click)="addNew(newName.value, newAmount.value)">Add</button>
-                    <button class="btn btn-danger" type="button">Delete</button>
-                    <button class="btn btn-primary" type="button">Clear</button>
+                    <button class="btn btn-success" type="button" [disabled]="!editForm.valid" (click)="addNew()">Add</button>
+                    <button class="btn btn-danger" type="button" [disabled]="!editForm.valid"  (click)="delete()">Delete</button>
+                    <button class="btn btn-primary" type="button"  (click)="clear()">Clear</button>
                 </div>
+                <span>
+                    {{editForm.value | json}} - {{editForm.valid}}
+                </span>
             </div>
         </form>
     </div>
