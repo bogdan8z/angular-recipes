@@ -11,6 +11,9 @@ import { HeaderComponent } from './header/header.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { StartWithRoutesComponent } from './start-with-routes/start-with-routes.component';
+import { StartWithoutRoutesComponent } from './start-without-routes/start-without-routes.component';
+import { Header2Component } from './header2/header2.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     RecipeItemComponent,
     RecipeDetailComponent,
-    RecipesComponent,    
+    RecipesComponent,
+    StartWithRoutesComponent,
+    StartWithoutRoutesComponent,
+    Header2Component,    
   ],
   imports: [
     BrowserModule,
