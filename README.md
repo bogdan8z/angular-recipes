@@ -38,7 +38,7 @@ https://www.udemy.com/course/the-complete-guide-to-angular-2/
 			  v
 			header
 	      	/	  \
- 		v	     v
+ 		v	   v
 shopping list	    recipe list
 shopping list edit	recipe item
 				    recipe details
