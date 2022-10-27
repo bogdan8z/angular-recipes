@@ -35,11 +35,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   graph TD;
       root-->header;
 	  root-->recipes;
-	  root-->shopping list;
-	  recipes-->recipe list;
-	  recipes-->recipe details;
-	  recipe list-->recipe item;
-	  shopping list-->shopping edit;     
+	  root-->shopping-list;
+	  recipes-->recipe-list;
+	  recipes-->recipe-details;
+	  recipe-list-->recipe-item;
+	  shopping-list-->shopping-edit;     
 ```
 
 # live: go to [stackblitz](https://stackblitz.com/github/bogdan8z/angular-recipe)
