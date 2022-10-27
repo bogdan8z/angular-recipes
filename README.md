@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## New project:
 ```>ng new recipes --no-strict```
 
-## Design
+## Components Design
 
 ```mermaid
   graph TD;
