@@ -30,19 +30,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ```>ng new recipes --no-strict```
 
 ## Design
-```
-https://www.udemy.com/course/the-complete-guide-to-angular-2/
 
-			root
-			  |
-			  v
-			header
-	      	/	  \
- 		v	   v
-shopping list	    recipe list
-shopping list edit	recipe item
-				    recipe details
-				    recipes(list+details)
+```mermaid
+  graph TD;
+      root-->header;
+	  root-->recipes;
+	  root-->shopping list;
+	  recipes-->recipe list;
+	  recipes-->recipe details;
+	  recipe list-->recipe item;
+	  shopping list-->shopping edit;     
 ```
 
-# go to [stackblitz](https://stackblitz.com/github/bogdan8z/angular-recipe)
+# live: go to [stackblitz](https://stackblitz.com/github/bogdan8z/angular-recipe)
