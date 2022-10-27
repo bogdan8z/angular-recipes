@@ -38,9 +38,11 @@ https://www.udemy.com/course/the-complete-guide-to-angular-2/
 			  v
 			header
 	      	/	  \
- 		   v	   v
+ 		v	     v
 shopping list	    recipe list
 shopping list edit	recipe item
 				    recipe details
 				    recipes(list+details)
 ```
+
+# go to [stackblitz](https://stackblitz.com/github/bogdan8z/angular-recipe)
