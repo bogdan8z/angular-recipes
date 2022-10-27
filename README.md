@@ -46,3 +46,11 @@ shopping list edit	recipe item
 ```
 
 # go to [stackblitz](https://stackblitz.com/github/bogdan8z/angular-recipe)
+
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
